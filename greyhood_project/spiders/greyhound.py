@@ -10,10 +10,10 @@ import pandas as pd
 class GreyhoundSpider(CrawlSpider):
     name = 'greyhound'
 
-    # custom_settings = {
-    #     'FEED_FORMAT': 'csv',
-    #     'FEED_URI': 'file:///Users/8470p/Desktop/betfair_spider/greyhood_project/greyhood_project/output.csv'
-    # }
+    custom_settings = {
+        'FEED_FORMAT': 'csv',
+        'FEED_URI': 'file:///Users/8470p/Desktop/betfair_spider/greyhood_project/greyhood_project/output.csv'
+    }
    
     allowed_domains = ['thegreyhoundrecorder.com.au']
     start_urls = ['http://thegreyhoundrecorder.com.au/form-guides/']
