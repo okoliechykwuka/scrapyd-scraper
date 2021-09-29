@@ -11,8 +11,8 @@ class GreyhoundSpider(CrawlSpider):
     name = 'greyhound'
 
     custom_settings = {
-        'FEED_FORMAT': 'csv',
-        'FEED_URI': 'file:///Users/8470p/Desktop/betfair_spider/greyhood_project/greyhood_project/output.csv'
+        'FEED_FORMAT': 'json',
+        'FEED_URI': 'file:///Users/8470p/Desktop/betfair_spider/greyhood_project/greyhood_project/my_file.json'
     }
    
     allowed_domains = ['thegreyhoundrecorder.com.au']

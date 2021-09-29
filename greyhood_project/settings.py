@@ -64,9 +64,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'greyhood_project.pipelines.GreyhoodProjectPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'greyhood_project.pipelines.JsonWriterPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,4 +88,4 @@ HTTPCACHE_ENABLED = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-# FEED_URI = 'file:///Users/8470p/Desktop/web-scraping/output.csv'
+FEED_URI = 'file:///Users/8470p/Desktop/web-scraping/output.json'
