@@ -20,7 +20,7 @@ from itemadapter import ItemAdapter
 class JsonWriterPipeline:
 
     def open_spider(self, spider):
-        self.file = open('items.jl', 'w')
+        self.file = open('items.json', 'w')
 
     def close_spider(self, spider):
         self.file.close()
