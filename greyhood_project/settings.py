@@ -88,4 +88,4 @@ HTTPCACHE_ENABLED = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-FEED_URI = 'file:///Users/8470p/Desktop/web-scraping/output.json'
+# FEED_URI = 'file:///Users/8470p/Desktop/web-scraping/output.json'
