@@ -67,7 +67,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'greyhood_project.pipelines.JsonWriterPipeline': 300,
+   'greyhood_project.pipelines.GreyhoodProjectPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
