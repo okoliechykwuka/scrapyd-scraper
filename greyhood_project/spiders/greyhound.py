@@ -4,17 +4,16 @@ from scrapy.spiders import CrawlSpider, Rule
 from datetime import datetime
 from scrapy.crawler import CrawlerProcess
 import re
-import os
+
 import pandas as pd
 
 
 class GreyhoundSpider(CrawlSpider):
     name = 'greyhound'
-    path = os.getcwd() + '\\' + 'results.json'
 
     custom_settings = {
         'FEEDS': {
-        path : {'format':'json'
+        'results.json': {'format':'json'
 
         }}}
    
