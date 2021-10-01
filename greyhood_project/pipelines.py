@@ -13,29 +13,19 @@ class GreyhoodProjectPipeline:
         return item
 
 
-# import json
+import json
 
-# from itemadapter import ItemAdapter
+from itemadapter import ItemAdapter
 
-# class JsonWriterPipeline:
+class JsonWriterPipeline:
 
-#     def open_spider(self, spider):
-#         self.file = open('items.json', 'w')
+    def open_spider(self, spider):
+        self.file = open('greyhound.json', 'w')
 
-#     def close_spider(self, spider):
-#         self.file.close()
+    def close_spider(self, spider):
+        self.file.close()
 
-#     def process_item(self, item, spider):
-#         line = json.dumps(ItemAdapter(item).asdict()) + "\n"
-#         self.file.write(line)
-#         return item
-
-# import random,string
-
-
-# class XlsxWriter(object):
-
-#     def __init__(self) -> None:
-        
-#         self.row = 1
-#         self.col = 0
+    def process_item(self, item, spider):
+        line = json.dumps(ItemAdapter(item).asdict()) + "\n"
+        self.file.write(line)
+        return item

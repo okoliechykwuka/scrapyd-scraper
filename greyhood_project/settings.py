@@ -19,7 +19,6 @@ NEWSPIDER_MODULE = 'greyhood_project.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-LOG_LEVEL='INFO'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 CONCURRENT_REQUESTS = 32
@@ -67,7 +66,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'greyhood_project.pipelines.GreyhoodProjectPipeline': 300,
+   'greyhood_project.pipelines.JsonWriterPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
