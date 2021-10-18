@@ -13,7 +13,7 @@ class GreyhoundSpider(CrawlSpider):
 
     custom_settings = {
         'FEEDS': {
-        'results.json': {'format':'json'
+        'results.csv': {'format':'csv'
 
         }}}
    
